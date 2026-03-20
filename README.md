@@ -1,2 +1,0 @@
-# aymara-web
-aymara-web
