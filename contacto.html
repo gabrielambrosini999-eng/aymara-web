@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Distribuidora Aymara</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <!-- <a href="index.html" class="logo">Distribuidora Aymara</a> -->
+            <a href="index.html"><img src="imagenes/logo.jpg" alt="" class="img-logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-grid">
+                
+                <!-- Columna de Información -->
+                <div class="contact-info">
+                    <h1>Contacto</h1>
+                    <div class="info-item">
+                        <span>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5493517677205&text=Hola!%20%0AQuiero%20recibir%20asesoramiento%20de%20los%20productos" target="_blank">3517677205</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span>Teléfono: <a href="tel:+5493517677205">3517677205</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span>Email: <a href="mailto:aymaradistribuidora@gmail.com">aymaradistribuidora@gmail.com</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span>Ubicación: <a href="https://www.google.com/maps/search/Arg%C3%BCello+C%C3%B3rdoba" target="_blank">Argüello - Córdoba</a></span>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.instagram.com/distribuidora_aymara/" target="_blank" class="insta-link">¡Seguinos en Instagram!</a>
+                    </div>
+                </div>
+
+                <!-- Columna del Formulario -->
+                <div class="contact-form-container">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Distribuidora Aymara</p>
+    </footer>
+
+</body>
+</html>

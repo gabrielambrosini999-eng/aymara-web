@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Distribuidora Aymara</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="products-page">
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <!-- <a href="index.html" class="logo">Distribuidora Aymara</a> -->
+            <a href="index.html"><img src="imagenes/logo.jpg" alt="" class="img-logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Icono Carrito -->
+            <div id="cart-icon-container" class="cart-hidden">
+                <button id="open-cart" class="cart-btn">
+                    🛒 <span id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+    <div class="product-intro">
+        <h1>Seleccioná un producto</h1>
+        <p>Explorá nuestras categorías para ver lo mejor de nuestro catálogo.</p>
+    </div>
+
+        <!-- Categorías -->
+        <nav class="category-nav">
+            <button class="cat-btn active" data-category="Frutos secos">Frutos secos</button>
+            <button class="cat-btn" data-category="Granolas">Granolas</button>
+            <button class="cat-btn" data-category="Frutas deshidratadas">Frutas deshidratadas</button>
+            <button class="cat-btn" data-category="Mixes">Mixes</button>
+        </nav>
+
+        <!-- Carrusel Principal -->
+        <section class="product-showcase">
+        <div class="main-display">
+            <div class="image-viewer">
+                <img id="main-img" src="imagenes/placeholder.jpg" alt="Cargando...">
+            </div>
+            <div class="product-details">
+                <!-- El JS inyectará el nombre y descripción del producto ACÁ -->
+                <h2 id="prod-name"></h2> 
+                <p id="prod-desc"></p>
+                <div id="prod-tags" class="tags"></div>
+                
+                <div class="purchase-box">
+                    <select id="size-selector"></select>
+                    <button id="add-to-cart" class="btn-buy">Agregar</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Miniaturas -->
+            <div class="thumbnails-container">
+                <p>PRODUCTOS DE LA CATEGORÍA</p>
+                <div id="thumbnails-grid" class="thumb-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Mi pedido</h3>
+                <button id="close-cart">&times;</button>
+            </div>
+            <div id="cart-items-list"></div>
+            <div class="modal-footer">
+                <p>Total: <span id="cart-total">$0</span></p>
+                <button id="whatsapp-order" class="btn-whatsapp-order">Realizar pedido por WhatsApp</button>
+                <button id="clear-cart" class="btn-clear">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Distribuidora Aymara</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
